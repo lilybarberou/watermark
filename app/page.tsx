@@ -28,7 +28,7 @@ export default function Home() {
 
     return (
         <S.Container>
-            <input ref={inputFile} type='file' onChange={handleFileChange} />
+            <input ref={inputFile} type='file' onChange={handleFileChange} accept='.pdf, image/png, image/jpeg' />
         </S.Container>
     );
 }
