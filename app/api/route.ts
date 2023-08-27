@@ -82,6 +82,3 @@ export async function POST(req: Request) {
         return NextResponse.error();
     }
 }
-
-
-export const dynamic = "force-dynamic"
