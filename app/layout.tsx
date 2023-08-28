@@ -1,10 +1,8 @@
-'use client';
-
-import { Navigation } from '@components/Navigation';
-import './globals.css';
 import type { Metadata } from 'next';
 import { Poppins, Outfit } from 'next/font/google';
 import StyledComponentsRegistry from '@lib/registry';
+import { Navigation } from '@components/Navigation';
+import './globals.scss';
 
 const outfit = Outfit({ subsets: ['latin'], variable: '--outfit' });
 const poppins = Poppins({ weight: ['400', '500'], subsets: ['latin'], variable: '--poppins' });
