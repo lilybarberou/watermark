@@ -15,6 +15,7 @@
     "canvas": "^2.11.2",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
+    "file-type": "^18.5.0",
     "next": "13.4.19",
     "pdf-lib": "^1.17.1",
     "react": "18.2.0",
