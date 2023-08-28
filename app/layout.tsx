@@ -1,8 +1,13 @@
+'use client';
+
+import { Navigation } from '@components/Navigation';
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Poppins, Outfit } from 'next/font/google';
+import StyledComponentsRegistry from '@lib/registry';
 
-const inter = Inter({ subsets: ['latin'], variable: '--poppins' });
+const outfit = Outfit({ subsets: ['latin'], variable: '--outfit' });
+const poppins = Poppins({ weight: ['400', '500'], subsets: ['latin'], variable: '--poppins' });
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -11,8 +16,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang='en'>
-            <body className={inter.variable}>{children}</body>
+        <html lang='fr'>
+            <body className={`${poppins.className} ${poppins.variable} ${outfit.variable}`}>
+                <StyledComponentsRegistry>
+                    <Navigation />
+                    {children}
+                </StyledComponentsRegistry>
+            </body>
         </html>
     );
 }

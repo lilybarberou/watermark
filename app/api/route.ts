@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import { checkFileServer } from '../functions/serverUtils';
-import { addWatermarkOnImage, addWatermarkOnPdf } from '../functions/watermark';
+import { checkFileServer } from '@functions/serverUtils';
+import { addWatermarkOnImage, addWatermarkOnPdf } from '@functions/watermark';
 
 export async function POST(req: Request) {
     try {
