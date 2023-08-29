@@ -17,6 +17,11 @@ export const metadata: Metadata = {
         url: 'https://fillifree.lilybarberou.fr',
         title: 'Fillifree | Protégez vos documents',
         description: 'Ajoutez gratuitement un filigrane à vos documents, de façon simple et sécurisée.',
+        images: [
+            {
+                url: 'https://api.lilybarberou.fr/assets/screenshots/fillifree.lilybarberou.fr/fillifree.lilybarberou.fr.png',
+            },
+        ],
     },
 };
 
