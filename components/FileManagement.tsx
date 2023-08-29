@@ -215,6 +215,11 @@ S.Container = styled.div`
         border: none;
         font-size: 18px;
         font-family: var(--poppins);
+        transition: 0.2s;
+
+        &:hover {
+            background: var(--color-primary-darker);
+        }
     }
 
     button {

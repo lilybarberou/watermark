@@ -6,6 +6,7 @@
 
 :root {
     --color-primary: #2e34ef;
+    --color-primary-darker: #262bc2;
     --color-secondary: #2e9bef;
     --app-padding-inline: 80px;
 
@@ -26,6 +27,7 @@
 html,
 body {
     max-width: 100vw;
+    scroll-behavior: smooth !important;
 }
 
 body {
@@ -123,6 +125,10 @@ footer {
     }
 }
 
+.wave-bottom {
+    marginTop: -100px;
+}
+
 @media (max-width: 900px) {
     h1 {
         font-size: 2.8rem;
@@ -130,6 +136,10 @@ footer {
     
     h2 {
         font-size: 2.2rem;
+    }
+
+    .wave-bottom {
+        margin-top: 0;
     }
 }
 

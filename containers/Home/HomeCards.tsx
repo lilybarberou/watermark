@@ -5337,10 +5337,11 @@ export function HomeCards() {
                 </S.Cards>
             </S.Container>
             <svg
-                style={{ background: 'var(--color-primary)', marginTop: -100, zIndex: -1 }}
+                style={{ background: 'var(--color-primary)', zIndex: -1 }}
                 viewBox='0 0 1440 470'
                 version='1.1'
                 xmlns='http://www.w3.org/2000/svg'
+                className='wave-bottom'
             >
                 <path
                     fill='#fff'
@@ -5368,7 +5369,8 @@ S.Container = styled.div`
 
     @media (max-width: 600px) {
         h2 {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            margin-top: 30px;
         }
     }
 `;
@@ -5403,5 +5405,19 @@ S.Card = styled.div`
 
     p {
         font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+        grid-template-rows: 260px 70px auto;
+
+        &:first-of-type {
+            grid-template-rows: 230px 70px auto;
+        }
+
+        &:nth-of-type(2) {
+            svg {
+                width: 70%;
+            }
+        }
     }
 `;

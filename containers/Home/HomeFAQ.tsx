@@ -36,6 +36,13 @@ S.Container = styled.div`
     flex-direction: column;
     width: 100%;
     max-width: 1000px;
+
+    @media (max-width: 600px) {
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+    }
 `;
 
 S.Question = styled.div<{ $active: boolean }>`
