@@ -67,7 +67,14 @@ export default function FileManagement() {
         return (
             <S.Container>
                 <p>Chargement du fichier...</p>
-                <svg style={{ width: 70, height: 100 }} xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' stroke='#2e9bef'>
+                <svg
+                    style={{ width: 70, height: 100 }}
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='44'
+                    height='44'
+                    viewBox='0 0 44 44'
+                    stroke='var(--color-secondary)'
+                >
                     <g fill='none' fillRule='evenodd' strokeWidth='2'>
                         <circle cx='22' cy='22' r='1'>
                             <animate
@@ -127,7 +134,7 @@ export default function FileManagement() {
                     width='120'
                     height='30'
                     viewBox='0 0 120 30'
-                    fill='#2e9bef'
+                    fill='var(--color-secondary)'
                 >
                     <circle cx='15' cy='15' r='15'>
                         <animate attributeName='r' from='15' to='15' begin='0s' dur='0.8s' values='15;9;15' calcMode='linear' repeatCount='indefinite' />
@@ -173,6 +180,7 @@ export default function FileManagement() {
         <S.Container>
             <input id='file' type='file' onChange={handleFileChange} accept='.pdf, image/png, image/jpeg' />
             <label htmlFor='file'>Choisir un fichier</label>
+            <span>+ ajouter des options</span>
             {error && <p className='error'>{error}</p>}
         </S.Container>
     );
@@ -184,6 +192,8 @@ S.Container = styled.div`
     flex-direction: column;
     align-items: center;
     height: 127px;
+    width: fit-content;
+    margin: auto;
 
     p {
         font-size: 1.125rem;
@@ -195,15 +205,15 @@ S.Container = styled.div`
 
     label,
     button {
-        padding: 10px 20px;
+        padding: 12px 40px;
         width: fit-content;
         color: #fff;
-        background: #2e9bef;
-        border-radius: 5px;
+        background: var(--color-primary);
+        border-radius: 8px;
         font-weight: 500;
         cursor: pointer;
         border: none;
-        font-size: 16px;
+        font-size: 18px;
         font-family: var(--poppins);
     }
 
@@ -216,5 +226,14 @@ S.Container = styled.div`
         margin-top: 15px;
         font-size: 16px;
         font-weight: 500;
+    }
+
+    span {
+        color: var(--color-secondary);
+        align-self: flex-start;
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin-top: 8px;
+        cursor: pointer;
     }
 `;

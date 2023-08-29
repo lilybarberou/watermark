@@ -5,8 +5,17 @@
 }
 
 :root {
-    --color-primary: #2e9bef;
-    --color-secondary: #2e34ef;
+    --color-primary: #2e34ef;
+    --color-secondary: #2e9bef;
+    --app-padding-inline: 80px;
+
+    @media (max-width: 1000px) {
+        --app-padding-inline: 40px;
+    }
+
+    @media (max-width: 600px) {
+        --app-padding-inline: 20px;
+    }
 }
 
 ::selection {
@@ -17,12 +26,27 @@
 html,
 body {
     max-width: 100vw;
-    overflow-x: hidden;
 }
 
 body {
     color: 000;
     background: fff;
+}
+
+h1 {
+    font-size: 3.2em;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--outfit);
 }
 
 a {
@@ -34,7 +58,7 @@ a {
         display: block;
         width: 0;
         height: 5px;
-        background: var(--color-secondary);
+        background: var(--color-primary);
         transition: width 0.3s;
     }
 
@@ -43,13 +67,79 @@ a {
     }
 }
 
+a.red-link {
+    color: red;
+    font-weight: 500;
+
+    &::after {
+        background: red;
+    }
+}
+
 nav {
     display: flex;
-    padding: 20px;
-    width: 100%;
-    margin-bottom: 80px;
+    padding-inline: var(--app-padding-inline);
+    padding-block: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    background: #fff;
+    align-items: center;
+}
 
-    a:first-child {
-        margin-right: auto;
+.logo {
+    margin-right: auto;
+    font-weight: 800;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &::after {
+        content: none;
+    }
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+
+    a {
+        color: var(--color-primary);
+        font-weight: 600;
+        
+        &::after {
+            content: none;
+        }
+    }
+    
+    &::after {
+        content: '';
+        margin-top: 15px;
+        display: block;
+        width: 100%;
+        height: 10px;
+        background: linear-gradient(to right, var(--color-secondary), var(--color-primary));
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.7rem;
     }
 }

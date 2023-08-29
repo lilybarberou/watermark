@@ -1,0 +1,30 @@
+[
+    {
+        "question": "Qu'est-ce que cette application fait exactement ?",
+        "answer": "Notre application vous permet d'ajouter facilement un filigrane à vos fichiers. Que ce soit pour protéger vos documents ou afficher votre marque, notre outil vous simplifie la tâche en appliquant des filigranes de manière rapide et efficace."
+    },
+    {
+        "question": "Comment puis-je ajouter un filigrane à mon fichier ?",
+        "answer": "C'est simple ! Téléchargez votre fichier sur notre plateforme, choisissez le filigrane que vous souhaitez appliquer, et laissez notre application faire le reste. En quelques étapes, votre fichier sera prêt avec le filigrane que vous avez choisi."
+    },
+    {
+        "question": "Que se passe-t-il avec mes fichiers après avoir ajouté le filigrane ?",
+        "answer": "Vos fichiers sont temporairement stockés pour le processus de filigrane, puis ils sont immédiatement supprimés de manière sécurisée. Vous pouvez être sûr(e) que vos fichiers restent confidentiels."
+    },
+    {
+        "question": "Est-ce que vous conservez une copie de mes fichiers ?",
+        "answer": "Non, nous ne conservons pas vos fichiers. Votre confidentialité est notre priorité et nous prenons des mesures pour garantir que vos données restent privées."
+    },
+    {
+        "question": "Comment assurez-vous la sécurité de mes données ?",
+        "answer": "La sécurité est essentielle pour nous. Nous utilisons des protocoles de chiffrement pour garantir que vos données sont sécurisées pendant le processus de transmission. De plus, nous maintenons nos systèmes à jour avec des pratiques de sécurité robustes."
+    },
+    {
+        "question": "Puis-je utiliser cette application sur n'importe quel type de fichier ?",
+        "answer": "Notre application prend en charge une variété de types de fichiers courants, tels que les images et les PDF."
+    },
+    {
+        "question": "Y a-t-il des coûts associés à l'utilisation de cette application ?",
+        "answer": "Notre service est actuellement gratuit. Cependant, certaines fonctionnalités avancées pourraient entraîner des frais. Tous les coûts seront clairement expliqués avant que vous ne choisissiez d'utiliser ces fonctionnalités payantes."
+    }
+]
